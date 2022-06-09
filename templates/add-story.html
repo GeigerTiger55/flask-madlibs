@@ -3,16 +3,40 @@
 {% block title %} Create Your Own Story {% endblock %}
 
 {% block content %}
-    <form action="/home" method="POST">
-        <div class="mb-3 row">
-            <label class="col-5 col-form-label text-end">{{ word }}</label>
-            <div class="col-7">
-        Nouns: <input type="number" name="number_of_nouns" value="1" min="0" max="3">
+<form action="/home" method="POST">
+    <div class="mb-3 row">
+        <label class="col-5 col-form-label text-end">Nouns: </label>
+        <div class="col-7">
+            <input type="number" name="number_of_nouns" value="1" min="0" max="3">
         </div>
-        Verbs: <input type="number" name="number_of_verbs" value="1" min="0" max="3">
-        Adjectives: <input type="number" name="number_of_adjectives" value="1" min="0" max="3">
-        Plural Nouns: <input type="number" name="number_of_plural_nouns" value="0" min="0" max="3">
+    </div>
+    <div class="mb-3 row">
+        <label class="col-5 col-form-label text-end">Verbs:  </label>
+        <div class="col-7">
+            <input type="number" name="number_of_verbs" value="1" min="0" max="3">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label class="col-5 col-form-label text-end">Adjectives:  </label>
+        <div class="col-7">
+            <input type="number" name="number_of_adjectives" value="1" min="0" max="3">
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label class="col-5 col-form-label text-end">Plural Nouns: </label>
+        <div class="col-7">
+            <input type="number" name="number_of_plural_nouns" value="0" min="0" max="3">
+        </div>
+    </div>
 
-    </form>
+    <div class="mb-3 row">
+        <label class="col-5 col-form-label text-end">Story Text: </label>
+        <div class="col-7">
+            <input type="text_area" name="story_text">
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg w-100">Create My Story Template!</button>
+</form>
 
 {% endblock %}
