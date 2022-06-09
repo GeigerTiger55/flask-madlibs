@@ -14,7 +14,7 @@ STORIES = {"silly": silly_story, "excited": excited_story}
 
 @app.get("/home")
 def choose_story():
-
+    """Add docstring"""
     return render_template('home.html', stories=STORIES)
 
 @app.get("/questions")

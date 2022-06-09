@@ -4,10 +4,14 @@
 
 {% block content %}
     <form action="/home" method="POST">
-        Nouns: <input type="number" name="number_of_nouns" value="0" min="0" max="3">
-        Verbs: <input type="number" name="number_of_verbs" value="0" min="0" max="3">
-        Adjectives: <input type="number" name="number_of_adjectives" value="0" min="0" max="3">
-        Nouns: <input type="number" name="number_of_nouns" value="0" min="0" max="3">
+        <div class="mb-3 row">
+            <label class="col-5 col-form-label text-end">{{ word }}</label>
+            <div class="col-7">
+        Nouns: <input type="number" name="number_of_nouns" value="1" min="0" max="3">
+        </div>
+        Verbs: <input type="number" name="number_of_verbs" value="1" min="0" max="3">
+        Adjectives: <input type="number" name="number_of_adjectives" value="1" min="0" max="3">
+        Plural Nouns: <input type="number" name="number_of_plural_nouns" value="0" min="0" max="3">
 
     </form>
 
